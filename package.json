@@ -3,7 +3,7 @@
   "name": "shared-lib",
   "version": "0.1.0",
   "scripts": {
-    "build": "nuxt build --dotenv ../../.env ./frontend/admin",
+    "build": "vite build",
     "dev": "nuxt dev --dotenv ../../.env ./frontend/admin",
     "preview": "nuxt preview --dotenv ../../.env ./frontend/admin",
     "generate:admin-frontend": "nuxt generate --dotenv ../../.env ./frontend/admin",
