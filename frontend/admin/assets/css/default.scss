@@ -1,0 +1,156 @@
+/* Override the behavior of Vuetify library to hide the vertical scroll bar of browser if not necessary */
+html {
+    overflow-y: auto !important
+}
+
+.v-counter {
+    height: 14px;
+    align-self: flex-start;
+}
+
+/* alert */
+.v-alert__content {
+    white-space: pre-line;
+    .v-alert-message:not(:last-child) {
+        margin-bottom: 0.2em;
+    }
+}
+.v-alert__close {
+    margin-inline-start: 0 !important;
+}
+.v-alert.bg-success {
+    background-color: #088212 !important;
+}
+.v-alert.bg-error {
+    background-color: #b81e1e !important;
+}
+.v-alert .icon-alert {
+    font-size: 25px !important;
+    padding-bottom: 8px;
+}
+
+/* sidebar menu */
+.v-list-item__prepend > .v-icon ~ .v-list-item__spacer {
+    width: 15px !important;
+}
+.toggle-nav-item .icon.icon-left-arrow::before {
+    font-size: smaller;
+}
+
+/* pag-select */
+.pag-select {
+    margin-left: -8px;
+
+    .v-field__outline div {
+        border-color: rgb(var(--v-theme-tertiary-darken-1));
+        opacity: 1;
+    }
+
+    .v-field__field {
+        height: 35px !important;
+
+        .v-field__input {
+            min-height: 35px !important;
+        }
+    }
+
+}
+
+/* data table */
+.v-table {
+    .v-table__wrapper {
+        border-radius: 0 !important;
+
+        > table > thead > tr > th  {
+            border-bottom: 0 !important;
+        }
+    }
+}
+.v-data-table-rows-no-data {
+    text-align: start !important;
+}
+.no-shrink-table {
+    td {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 15em;
+        word-break: keep-all;
+    }
+    th .title {
+        white-space: nowrap;
+    }
+}
+.v-data-table__thead .table-header-cell {
+    background-color: rgb(var(--v-theme-tertiary-darken-1));
+    border-right: 1px solid white;
+    height: 32px !important;
+}
+
+/* input */
+.v-input--density-default:not(.v-textarea) .v-field__field {
+    height: 48px !important;
+
+    .v-field__input {
+        padding-top: 0;
+        padding-bottom: 0;
+        min-height: 48px !important;
+    }
+}
+.v-field__prepend-inner {
+    margin: 0px 3px 0px 2px;
+    .v-icon {
+        opacity: 1 !important;
+    }
+}
+
+/* file input */
+.v-input.v-file-input .v-field__input {
+    word-break: break-word;
+}
+
+/* input detail area */
+.v-messages__message {
+    @extend .wrap-text;
+    line-height: 16px !important;
+    padding-bottom: 5px;
+}
+.v-input__details {
+    padding-inline: 0 !important;
+}
+
+/* checkbox */
+.v-selection-control__input > .v-icon.mdi-checkbox-blank-outline {
+    opacity: 0.35 !important;
+}
+.v-selection-control .v-label {
+    opacity: 1;
+}
+
+/* prepend icon button */
+.v-btn__prepend {
+    margin-inline: calc(var(--v-btn-height) / -9) calc(var(--v-btn-height) / 15) !important;
+}
+
+/**
+ * App's specific class
+ */
+.ellipsis-text {
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+}
+.wrap-text {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+.section-title {
+    font-size: 24px;
+    margin-left: 8px;
+    line-height: 32px;
+    display: inline-block;
+}
+.hide-if-empty:empty {
+    display: none !important;
+}
