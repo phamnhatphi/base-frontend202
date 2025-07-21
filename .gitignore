@@ -33,7 +33,7 @@ coverage
 *.lcov
 .nyc_output
 
-# 
+#
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -54,3 +54,7 @@ coverage
 Network Trash Folder
 Temporary Items
 .apdisk
+node_modules/
+.nuxt/
+.output/
+.DS_Store
